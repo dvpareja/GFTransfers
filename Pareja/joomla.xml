@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<joomla>
+    <component>
+        <name>GFTransfers</name>
+        <lowname>gftransfers</lowname>
+        <uppername>GFTRANSFERS</uppername>
+        <version>0.0.1</version>
+        <projectDir>/home/darth/NetBeansProjects/Pareja/GFTransfers/Pareja</projectDir>
+    </component>
+</joomla>
