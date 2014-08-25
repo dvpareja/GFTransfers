@@ -28,7 +28,7 @@
     <files folder="site">
         <filename>index.html</filename>
         <filename>gftransfers.php</filename>
-        <filename>controller.php</filename>
+        <filename>toolbar.php</filename>
         <folder>views</folder>
         <folder>models</folder>
         <folder>language</folder>
@@ -39,13 +39,14 @@
         <files folder="admin">
             <filename>index.html</filename>
             <filename>gftransfers.php</filename>
-            <filename>controller.php</filename>
+            <filename>toolbar.php</filename>
+            <filename>access.xml</filename>
+            <filename>config.xml</filename>
             <folder>sql</folder>
             <folder>tables</folder>
             <folder>models</folder>
             <folder>views</folder>
             <folder>language</folder>
-            <folder>controllers</folder>
             <folder>helpers</folder>
         </files>
     </administration>
