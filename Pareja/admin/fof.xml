@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<fof>
+    <backend>
+        <dispatcher>
+            <option name="default_view">countries</option>
+        </dispatcher>
+    </backend>
+</fof>

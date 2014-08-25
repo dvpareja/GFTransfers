@@ -1,18 +1,20 @@
 <?php
+/**
+ * @package gftransfers
+ * @copyright Copyright (c)2014 David Valverde / grafitto.es
+ * @license GNU General Public License version 3 or later
+ */
+
 // No direct access to this file
 defined('_JEXEC') or die('Restricted access');
  
-JLoader::register('GFTransfersHelper', dirname(__FILE__) . DS . 'helpers' . DS . 'gftransfers.php');
 
-// import joomla controller library
-jimport('joomla.application.component.controller');
- 
-// Get an instance of the controller prefixed by GFTransfers
-$controller = JController::getInstance('GFTransfers');
-JFactory::getApplication()->JComponentTitle = "<h1>GFTransfers</h1>";
- 
-// Perform the Request task
-$controller->execute(JRequest::getCmd('task'));
- 
-// Redirect if set by the controller
-$controller->redirect();
+// Load FOF
+include_once JPATH_LIBRARIES.'/f0f/include.php';
+if(!defined('F0F_INCLUDED')) {
+	JError::raiseError ('500', 'FOF is not installed');
+	
+	return;
+}
+
+F0FDispatcher::getTmpInstance('com_gftransfers')->dispatch();
