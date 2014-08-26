@@ -72,3 +72,4 @@ CREATE TABLE IF NOT EXISTS `#__gftransfers_currencies` (
   `locked_on` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   PRIMARY KEY (`gftransfers_currency_id`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 ;
+
